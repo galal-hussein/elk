@@ -40,6 +40,6 @@ ADD run.sh /tmp/run.sh
 RUN chmod +x /tmp/run.sh
 WORKDIR /opt/kibana
 
-EXPOSE 8000
+EXPOSE 8000 5000 5000/udp 9200
 
 ENTRYPOINT /tmp/run.sh
